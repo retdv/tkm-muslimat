@@ -1,0 +1,21 @@
+.sambutanContainer {
+  height: auto;
+  margin: 0;
+  text-align: center;
+  padding: 35px;
+  background: #14c38fd0 url(../../assets/img/bg/181.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.sambutanContainer .content {
+  width: 65vw;
+  height: auto;
+  margin: 20px auto 20px auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .sambutanContainer .content {
+    width: 100%;
+  }
+}

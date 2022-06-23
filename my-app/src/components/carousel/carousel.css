@@ -1,0 +1,17 @@
+.carouselItem {
+  height: 75vh;
+}
+
+.carouselItem img {
+  object-position: center;
+  margin-top: -100px;
+}
+
+@media only screen and (max-width: 960px) {
+  .carousel-item {
+    height: auto;
+  }
+  .carouselItem img {
+    margin-top: 0;
+  }
+}

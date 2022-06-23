@@ -1,0 +1,28 @@
+.beritaCard {
+  width: 250px;
+  padding: 10px;
+}
+
+.cardImage {
+  width: 240px;
+  height: 240px;
+}
+
+@media only screen and (max-width: 960px) {
+  .beritaCard {
+    width: 300px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .beritaCard {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cardCaption,
+  .cardTitle {
+    text-align: center;
+  }
+}

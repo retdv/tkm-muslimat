@@ -1,0 +1,50 @@
+.footer {
+  padding: 20px;
+  background-color: black;
+}
+
+.widget {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1.5px solid #14c38f;
+  height: auto;
+}
+
+.widgetCol {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+.widgetCol a {
+  font-size: 12pt;
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+.widgetLink {
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12pt;
+  color: #f8f9fa;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .widget {
+    flex-direction: column;
+  }
+
+  .widgetCol {
+    width: 100%;
+  }
+
+  .widgetLink {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,29 @@
+.guruCard {
+  width: 250px;
+  padding: 10px;
+  margin: 0 50px;
+}
+
+.cardImage {
+  width: 200px;
+  height: 240px;
+}
+
+@media only screen and (max-width: 960px) {
+  .guruCard {
+    width: 300px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .guruCard {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cardCaption,
+  .cardTitle {
+    text-align: center;
+  }
+}
