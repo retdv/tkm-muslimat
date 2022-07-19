@@ -1,7 +1,31 @@
 import "./footer.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
-const footer = () => {
+const Footer = () => {
+  const navigate = useNavigate();
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(";").shift();
+  }
+
+  const logOut = async () => {
+    try {
+      await axios({
+        url: "/logout",
+        method: "delete",
+        baseURL: "http://localhost:8080",
+        withCredentials: true,
+      });
+      navigate("/", { replace: true });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const logged = getCookie("logged");
+
   return (
     <div className='footer'>
       <div className='widget'>
@@ -28,9 +52,15 @@ const footer = () => {
           <Link to='/contact' className='widgetLink'>
             Hubungi Kami
           </Link>
-          <Link to='/login' className='widgetLink disabled'>
-            Masuk
-          </Link>
+          {logged ? (
+            <button onClick={logOut} className='btn btn-outline-success'>
+              Keluar
+            </button>
+          ) : (
+            <Link to='/login' className='widgetLink'>
+              Masuk
+            </Link>
+          )}
         </div>
       </div>
       <div className='copyright'>
@@ -40,4 +70,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

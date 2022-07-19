@@ -1,0 +1,16 @@
+.links {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.dashboard {
+  height: 70vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.dashboard p {
+  font-size: 15pt;
+}

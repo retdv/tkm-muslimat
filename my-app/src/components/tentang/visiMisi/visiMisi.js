@@ -8,7 +8,7 @@ const VisiMisi = (props) => {
       <h2 className='title'>Visi & Misi</h2>
       <p className='text'>{props.visiMisiText}</p>
       <div className='mx-auto'>
-        <ReadMoreBtn show={true} />
+        <ReadMoreBtn show={props.show} />
       </div>
     </Container>
   );

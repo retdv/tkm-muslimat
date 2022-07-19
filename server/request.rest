@@ -1,0 +1,48 @@
+GET http://localhost:8080/getusers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOnsiaWQiOiJyZXRkZXYifSwiaWF0IjoxNjU2MzM5NDUyLCJleHAiOjE2NTYzMzk0ODJ9.1CeHvXnkrUOkgmRlQMDD3K416r3secMInvGduSiKeJA
+
+###
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+    "id": "retdev",
+    "password": "Ramanur123",
+    "confirmPassword": "Ramanur123"
+}
+
+###
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "id": "retdev2",
+    "password": "Ramanur123"
+}
+
+###
+GET http://localhost:8080/token
+
+
+###
+DELETE http://localhost:8080/logout
+
+
+###
+GET http://localhost:8080/get-berita
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOnsiaWQiOiJyZXRkZXYifSwiaWF0IjoxNjU3MTEzODcwLCJleHAiOjE2NTcxMTM5MDB9.Qva-hsRMCGxeFf2WwQzjl2qIhqwj-gTa4cLGaaVVNmQ
+
+###
+DELETE http://localhost:8080/berita/62c58546292756135603f4f3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOnsiaWQiOiJyZXRkZXYifSwiaWF0IjoxNjU3MTEzNTIxLCJleHAiOjE2NTcxMTM1NTF9.oqeP77R8bW1l3-ynG7BqMuzdj7oKo0U7GPpCYb4j8oA
+
+
+###
+POST http://localhost:8080/create-berita
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOnsiaWQiOiJyZXRkZXYifSwiaWF0IjoxNjU3MTEzODcwLCJleHAiOjE2NTcxMTM5MDB9.Qva-hsRMCGxeFf2WwQzjl2qIhqwj-gTa4cLGaaVVNmQ
+Content-Type: application/json
+
+{
+    "judul": "jalan sehat",
+    "desc": "jalan sehat setiap jumat"
+}

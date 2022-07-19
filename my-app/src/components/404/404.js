@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom";
+
 const notFound = () => {
   return (
-    <h1 className='text-center my-auto' style={{ height: 270 }}>
-      <strong>404 Page Not Found</strong>
-    </h1>
+    <div className='container-fluid text-center' style={{ height: 270 }}>
+      <h1>
+        <strong>Halaman tidak ditemuakan</strong>
+      </h1>
+      <Link to='/'>kembali ke halaman home?</Link>
+    </div>
   );
 };
 

@@ -1,0 +1,12 @@
+.login {
+  width: 60vw;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .login {
+    width: 100vw;
+    margin: 0;
+  }
+}

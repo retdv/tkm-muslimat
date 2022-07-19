@@ -20,6 +20,7 @@ const tentang = () => {
       <VisiMisi visiMisiText={textLimiter(visiMisiText)} show={true} />
       <Fasilitas
         fasilitasText={textLimiter(fasilitasText)}
+        showBtn={true}
         pendaftaranText={textLimiter(pendaftaranText)}
       />
     </div>
